@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.location {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.current-conditions,
+.today,
+.hourly-forecast {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.current-conditions .condition,
+.today .detail,
+.hourly-forecast .hour {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.current-conditions .condition p,
+.today .detail p,
+.hourly-forecast .hour p {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.current-conditions .condition small,
+.today .detail small,
+.hourly-forecast .hour small {
+    display: block;
+    color: #666;
+    font-size: 14px;
+}
+
+.current-conditions .temp,
+.today .value,
+.hourly-forecast .arrow {
+    font-size: 18px;
+    color: #333;
+}
+
+.current-conditions .icon,
+.today .icon,
+.hourly-forecast .icon {
+    font-size: 24px;
+    color: #333;
+}

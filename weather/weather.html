@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriWeather - Local Weather</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Soil Analysis</h1>
+        </div>
+        <nav>
+            <a href="/index.html">Dashboard</a>
+            <a href="/crops/crops.html">Crops</a>
+            <a href="/soil_analysis/soil_analysis.html">New Analysis</a>
+            <a href="/community/community.html">Community</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Local Weather</h2>
+        <p class="location">Location: 94110</p>
+        <section class="current-conditions">
+            <h3>Current Conditions</h3>
+            <div class="condition">
+                <span class="icon">☀️</span>
+                <p>Sunny<br><small>Feels like: 70°F</small></p>
+                <span class="temp">72°F</span>
+            </div>
+        </section>
+        <section class="today">
+            <h3>Today</h3>
+            <div class="detail">
+                <span class="icon">🌂</span>
+                <p>Precipitation<br><small>0.0 in</small></p>
+                <span class="value">0%</span>
+            </div>
+            <div class="detail">
+                <span class="icon">💨</span>
+                <p>Wind Speed<br><small>9 mph</small></p>
+                <span class="value">9 mph</span>
+            </div>
+            <div class="detail">
+                <span class="icon">💧</span>
+                <p>Dew Point<br><small>Humidity: 54%</small></p>
+                <span class="value">54°F</span>
+            </div>
+        </section>
+        <section class="hourly-forecast">
+            <h3>Hourly Forecast</h3>
+            <div class="hour">
+                <span class="icon">☀️</span>
+                <p>68°F<br><small>8:00 am</small></p>
+                <span class="arrow">➔</span>
+            </div>
+            <div class="hour">
+                <span class="icon">☀️</span>
+                <p>70°F<br><small>9:00 am</small></p>
+                <span class="arrow">➔</span>
+            </div>
+            <div class="hour">
+                <span class="icon">☀️</span>
+                <p>72°F<br><small>10:00 am</small></p>
+                <span class="arrow">➔</span>
+            </div>
+            <div class="hour">
+                <span class="icon">☀️</span>
+                <p>74°F<br><small>11:00 am</small></p>
+                <span class="arrow">➔</span>
+            </div>
+            <div class="hour">
+                <span class="icon">☀️</span>
+                <p>76°F<br><small>12:00 pm</small></p>
+                <span class="arrow">➔</span>
+            </div>
+        </section>
+    </main>
+    <script src="weather.js"></script>
+</body>
+</html>
