@@ -9,54 +9,51 @@
 <body>
     <header>
         <div class="logo">
-            <h1>Soil Analysis</h1>
+            <h1>Market Analysis</h1>
         </div>
         <nav>
             <a href="/index.html">Dashboard</a>
+            <a href="/weather/weather.html">Weather</a>
             <a href="/crops/crops.html">Crops</a>
-            <a href="/soil_analysis/soil_analysis.html">Weather</a>
             <a href="/community/community.html">Community</a>
         </nav>
     </header>
     <main>
-        <section class="new-analysis">
-            <h2>New Analysis</h2>
-            <form>
-                <label for="field-name">Field Name</label>
-                <input type="text" id="field-name" name="field-name" placeholder="Enter field name">
-                
-                <label for="field-size">Field Size (acres)</label>
-                <input type="text" id="field-size" name="field-size" placeholder="Enter field size">
-                
-                <label for="soil-type">Soil Type</label>
-                <select id="soil-type" name="soil-type">
-                    <option value="" disabled selected>Select soil type</option>
-                    <option value="sandy">Sandy</option>
-                    <option value="clay">Clay</option>
-                    <option value="silt">Silt</option>
-                    <option value="peat">Peat</option>
-                    <option value="loam">Loam</option>
-                </select>
-                
-                <label for="soil-ph">Soil pH</label>
-                <input type="text" id="soil-ph" name="soil-ph" placeholder="Enter soil pH">
-                
-                <label for="organic-matter">Organic Matter (%)</label>
-                <input type="text" id="organic-matter" name="organic-matter" placeholder="Enter organic matter %">
-                
-                <label for="nitrate-n">Nitrate-N (ppm)</label>
-                <input type="text" id="nitrate-n" name="nitrate-n" placeholder="Enter nitrate-N (ppm)">
-                
-                <label for="phosphorus">Phosphorus (ppm)</label>
-                <input type="text" id="phosphorus" name="phosphorus" placeholder="Enter phosphorus (ppm)">
-                
-                <label for="potassium">Potassium (ppm)</label>
-                <input type="text" id="potassium" name="potassium" placeholder="Enter potassium (ppm)">
-                
-                <button type="submit" class="submit-btn">Start Analysis</button>
-            </form>
-        </section>
+        <h2>New Analysis</h2>
+        <form>
+            <label for="field-name">Field Name</label>
+            <input type="text" id="field-name" name="field-name" placeholder="Enter field name">
+            
+            <label for="field-size">Field Size (acres)</label>
+            <input type="text" id="field-size" name="field-size" placeholder="Enter field size">
+            
+            <label for="soil-type">Soil Type</label>
+            <select id="soil-type" name="soil-type">
+                <option value="" disabled selected>Select soil type</option>
+                <option value="sandy">Sandy</option>
+                <option value="clay">Clay</option>
+                <option value="silt">Silt</option>
+                <option value="peat">Peat</option>
+                <option value="loam">Loam</option>
+            </select>
+            
+            <label for="soil-ph">Soil pH</label>
+            <input type="text" id="soil-ph" name="soil-ph" placeholder="Enter soil pH">
+            
+            <label for="organic-matter">Organic Matter (%)</label>
+            <input type="text" id="organic-matter" name="organic-matter" placeholder="Enter organic matter %">
+            
+            <label for="nitrate-n">Nitrate-N (ppm)</label>
+            <input type="text" id="nitrate-n" name="nitrate-n" placeholder="Enter nitrate-N (ppm)">
+            
+            <label for="phosphorus">Phosphorus (ppm)</label>
+            <input type="text" id="phosphorus" name="phosphorus" placeholder="Enter phosphorus (ppm)">
+            
+            <label for="potassium">Potassium (ppm)</label>
+            <input type="text" id="potassium" name="potassium" placeholder="Enter potassium (ppm)">
+            
+            <button type="submit" class="submit-btn">Start Analysis</button>
+        </form>
     </main>
-    <script src="script.js"></script>
 </body>
 </html>

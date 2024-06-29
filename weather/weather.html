@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="logo">
-            <h1>Soil Analysis</h1>
+            <h1>Local Weather</h1>
         </div>
         <nav>
             <a href="/index.html">Dashboard</a>
@@ -19,60 +19,71 @@
         </nav>
     </header>
     <main>
-        <h2>Local Weather</h2>
         <p class="location">Location: 94110</p>
         <section class="current-conditions">
             <h3>Current Conditions</h3>
             <div class="condition">
-                <span class="icon">☀️</span>
-                <p>Sunny<br><small>Feels like: 70°F</small></p>
+                <div class="condition-details">
+                    <span class="icon">☀️</span>
+                    <div>
+                        <p>Sunny</p>
+                        <small>Feels like: 70°F</small>
+                    </div>
+                </div>
                 <span class="temp">72°F</span>
             </div>
         </section>
         <section class="today">
             <h3>Today</h3>
-            <div class="detail">
-                <span class="icon">🌂</span>
-                <p>Precipitation<br><small>0.0 in</small></p>
-                <span class="value">0%</span>
-            </div>
-            <div class="detail">
-                <span class="icon">💨</span>
-                <p>Wind Speed<br><small>9 mph</small></p>
-                <span class="value">9 mph</span>
-            </div>
-            <div class="detail">
-                <span class="icon">💧</span>
-                <p>Dew Point<br><small>Humidity: 54%</small></p>
-                <span class="value">54°F</span>
+            <div class="details-grid">
+                <div class="detail">
+                    <span class="icon">🌂</span>
+                    <p>Precipitation</p>
+                    <small>0.0 in</small>
+                    <span class="value">0%</span>
+                </div>
+                <div class="detail">
+                    <span class="icon">💨</span>
+                    <p>Wind Speed</p>
+                    <small>9 mph</small>
+                    <span class="value">9 mph</span>
+                </div>
+                <div class="detail">
+                    <span class="icon">💧</span>
+                    <p>Dew Point</p>
+                    <small>Humidity: 54%</small>
+                    <span class="value">54°F</span>
+                </div>
             </div>
         </section>
         <section class="hourly-forecast">
             <h3>Hourly Forecast</h3>
-            <div class="hour">
-                <span class="icon">☀️</span>
-                <p>68°F<br><small>8:00 am</small></p>
-                <span class="arrow">➔</span>
-            </div>
-            <div class="hour">
-                <span class="icon">☀️</span>
-                <p>70°F<br><small>9:00 am</small></p>
-                <span class="arrow">➔</span>
-            </div>
-            <div class="hour">
-                <span class="icon">☀️</span>
-                <p>72°F<br><small>10:00 am</small></p>
-                <span class="arrow">➔</span>
-            </div>
-            <div class="hour">
-                <span class="icon">☀️</span>
-                <p>74°F<br><small>11:00 am</small></p>
-                <span class="arrow">➔</span>
-            </div>
-            <div class="hour">
-                <span class="icon">☀️</span>
-                <p>76°F<br><small>12:00 pm</small></p>
-                <span class="arrow">➔</span>
+            <div class="forecast-grid">
+                <div class="hour">
+                    <p>68°F</p>
+                    <span class="icon">☀️</span>
+                    <small>8:00 am</small>
+                </div>
+                <div class="hour">
+                    <p>70°F</p>
+                    <span class="icon">☀️</span>
+                    <small>9:00 am</small>
+                </div>
+                <div class="hour">
+                    <p>72°F</p>
+                    <span class="icon">☀️</span>
+                    <small>10:00 am</small>
+                </div>
+                <div class="hour">
+                    <p>74°F</p>
+                    <span class="icon">☀️</span>
+                    <small>11:00 am</small>
+                </div>
+                <div class="hour">
+                    <p>76°F</p>
+                    <span class="icon">☀️</span>
+                    <small>12:00 pm</small>
+                </div>
             </div>
         </section>
     </main>

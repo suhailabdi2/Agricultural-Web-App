@@ -3,32 +3,44 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    color: #333;
 }
 
 header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .logo h1 {
     margin: 0;
     font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
-    margin: 0 15px;
+    color: #ecf0f1;
     text-decoration: none;
-    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #34495e;
 }
-
 main {
     max-width: 800px;
     margin: 40px auto;
@@ -37,7 +49,7 @@ main {
 
 h2 {
     font-size: 36px;
-    color: #333;
+    margin-bottom: 5px;
 }
 
 .location {
@@ -47,53 +59,78 @@ h2 {
 }
 
 section {
-    margin-bottom: 40px;
-}
-
-.current-conditions,
-.today,
-.hourly-forecast {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-.current-conditions .condition,
-.today .detail,
-.hourly-forecast .hour {
+h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.current-conditions .condition {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
 }
 
-.current-conditions .condition p,
-.today .detail p,
-.hourly-forecast .hour p {
+.condition-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.temp {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.detail {
+    text-align: center;
+}
+
+.detail p {
+    margin: 5px 0;
+}
+
+.detail small {
+    color: #666;
+}
+
+.detail .value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.forecast-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hour {
+    text-align: center;
+}
+
+.hour p {
     margin: 0;
     font-size: 18px;
-    color: #333;
+    font-weight: bold;
 }
 
-.current-conditions .condition small,
-.today .detail small,
-.hourly-forecast .hour small {
-    display: block;
+.hour small {
     color: #666;
-    font-size: 14px;
-}
-
-.current-conditions .temp,
-.today .value,
-.hourly-forecast .arrow {
-    font-size: 18px;
-    color: #333;
-}
-
-.current-conditions .icon,
-.today .icon,
-.hourly-forecast .icon {
-    font-size: 24px;
-    color: #333;
 }
